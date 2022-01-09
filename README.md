@@ -1,7 +1,7 @@
 # COUGHvid
 COVID-19 cough classification based on audio samples.
 
-# Dataset
+##s Dataset
 
 The World Health Organization (WHO) has reported that 67.7% of COVID-19 patients exhibit a “dry cough,” which may be audibly different from
 coughs caused by other pathologies. Such cough sounds analysis has proven successful in diagnosing respiratory conditions like pertussis,
@@ -24,7 +24,10 @@ Important to choose right ranges and duration of thw windows for the stft, how c
 I choose to use transfer learning and pre-trained archetecture to reduce training time and just fine tuning the weights
 
 
-# Future Work
+## Results
+<!--  confronto con una baseline di qualche tipo-->
+
+## Future Work
 TO-DO
 
 
