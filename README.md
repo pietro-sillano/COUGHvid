@@ -9,26 +9,27 @@ asthma, and pneumonia.
 I employ the COUGHVID database [1], which is an extensive dataset of COVID-19  cough sounds from around the world, partially validated by expert pulmonologists.
 
 ## Feature extraction
-I used a Convolutional Neural Network (CNN) for this task of classification. But why using a CNN if we're dealing with audio data ? Infact the first part of pipeline is to obtain a spectrogram of each audio sample. The spectrograms can be seen and treated as images.
-To create the spectrogram we use the Short Time Fourier Transform (STFT) that map our audio sample, a time domain signal in the frequency domain.
-
+I used a Convolutional Neural Network (CNN) for this task of classification. But why using a CNN if we're dealing with audio data ? Infact the first part of pipeline is to obtain a spectrogram of each audio sample. 
+To create the spectrogram we use the Short Time Fourier Transform (STFT) that map our audio sample into the frequency domain.
+A spectrogram is a visual way of representing the amplitude of the signal over time at various frequencies. Not only can one see whether there is more or less energy at, for example, 2 Hz vs 10 Hz, but one can also see how energy levels vary over time.
 ![plot](./img/spectrogram.png)
 
-I obtain this plot with time on x-axis and frequency on y-axis and it show the magnitude of the power spectrum.
-Setting correct range of frequencies it's possible to obtain a good and different representation of the audio samples.
-And consequently feed these images into a CNN.
-
-Important to choose right ranges and duration of thw windows for the stft, how can I choose that?
+With the correct range of frequencies, STFT permit us to extract valuable and effective features from our data and fed into a standard CNN, since the spectrograms can be treated as images!
+ 
 
 ## Architecture
-I choose to use transfer learning and pre-trained archetecture to reduce training time and just fine tuning the weights
+I choose to use pre-trained architectures to reduce training time and just fine-tuning the network weights. 
+
+1. [EfficientNet](https://pytorch.org/hub/nvidia_deeplearningexamples_efficientnet/)
+2. ResNet
+3. Inception v3
 
 
 ## Results
 <!--  confronto con una baseline di qualche tipo-->
-
+TODO
 ## Future Work
-TO-DO
+TODO
 
 
 # References
