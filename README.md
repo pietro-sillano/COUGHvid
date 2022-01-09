@@ -6,7 +6,7 @@ COVID-19 cough classification based on audio samples.
 I used a Convolutional Neural Network (CNN) for this task of classification. But why using a CNN if we're dealing with audio data ? Infact the first part of pipeline is to obtain a spectrogram of each audio sample. The spectrograms can be seen and treated as images.
 To create the spectrogram we use the Short Time Fourier Transform (STFT) that map our audio sample, a time domain signal in the frequency domain.
 
-![plot](../img/spectrogram.png?raw=true)
+![plot](../img/spectrogram.png)
 
 
 
